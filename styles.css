@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+:root {
+    --primary-color: #377500;
+    --text-color: rgb(31, 31, 31);
+    --highlight-color: aliceblue;
+    --color-de-fondo: #e3fdcb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--color-de-fondo);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    color: var(--highlight-color);
+    background-image: url("./assets/main-livingroom-plants.png") ;
+}
+
+header > nav {
+    display:flex;
+    justify-content: center;
+}
+
+header > nav > p {
+    font-family: Leckerli One, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+header > nav > h2 {
+    font-family: Leckerli One, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+
+header > nav > ul {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+header > nav > ul > li:hover {
+    color: var(--primary-color);
+    transition: opacity 0.3s;
+}
+
+header > nav > p {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+
+.top-banner {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 3rem;
+    cursor: pointer;
+
+/*     border: 1px solid red; */
+}
+
+h1 > img {
+    width: 3.5rem;
+}
+
+h2 {
+    /* border: 1px solid red; */
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    font-family: Leckerli One, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 1.5rem;
+}
+
+.social-media-nav {
+    gap: 0.5rem;
+}
+
+.social-media-nav > li > img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.container-paragraph {
+    display: block;
+    text-align: center;
+    margin: 2rem;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services > p {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color:var(--text-color);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#catalogo li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(252, 249, 237);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+#catalogo ul{
+    display: grid;
+    list-style: none;
+    padding: 5rem;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: 500px;
+    gap: 3rem;
+}
+
+#catalogo button {
+    background-color:#37750000;
+    padding: 0.25rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#catalogo button:hover {
+    background-color: var(--color-de-fondo);
+}
+
+#catalogo img {
+    width: 11rem;
+    height: auto;
+    object-fit: cover;
+}
+
+#catalogo > ul > li > .container-under-catalogo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#catalogo > ul > li > .container-under-catalogo > p {
+    font-size: 30px;
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+}
+
+#catalogo > ul > li > .container-under-catalogo > .mas-informacion {
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#catalogo button img {
+    width: 2.5rem;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas */
+    gap: 2rem; /* Espacio entre las imágenes */
+    margin: 2rem;
+}
+
+.news > ul {
+    list-style: none;
+}
+
+.news > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem
+    ;
+}
+
+.news > ul > li > img {
+    width: 100%; /* Para que las imágenes ocupen todo el espacio disponible en su contenedor */
+    height: 100%;
+    object-fit: cover; /* Para mantener la proporción de aspecto */
+}
